@@ -1,4 +1,6 @@
 SpeechRecognition
 pydub
 pytube
+transformers
+python-dotenv
 # ffmpeg --> instalar no SO
