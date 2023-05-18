@@ -18,7 +18,7 @@ async def _onDownloadComplete(fileName: str):
         print("Transcrevendo...")
         text = r.recognize_google(audio_data, language='pt-BR')
 
-        text = await refinarTexto(text)
+        # text = await refinarTexto(text)
 
         print("\nTrancrição:\n\"" + text + '"')
 
@@ -63,4 +63,4 @@ async def transcrever(video_url: str):
         print(e)
 
 
-asyncio.run(transcrever("https://www.youtube.com/watch?v=mWzMddqkyV8"))
+asyncio.run(transcrever("https://www.youtube.com/watch?v=D4t8K1QQs7g&t=2s"))
